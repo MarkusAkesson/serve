@@ -54,7 +54,6 @@ fn main() -> io::Result<()> {
     )
     .expect("Failed to initiate logger");
     let io_uring = rio::new()?;
-    // TODO: take ip + port as args
     let acceptor = TcpListener::bind(config.socket_addr())?;
     info!("Listening on {}:{}", config.ip(), config.port());
     loop {
