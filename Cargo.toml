@@ -1,0 +1,13 @@
+[package]
+name = "serve"
+version = "0.1.0"
+authors = ["Markus Åkesson <macke.95_06@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rio = "0.9.4"
+log = "0.4.14"
+simplelog = "0.9.0"
+clap = "2.33.3"
