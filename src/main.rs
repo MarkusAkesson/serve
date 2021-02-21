@@ -1,14 +1,15 @@
 mod cli;
 mod config;
 
-use log::{debug, error, info};
-use simplelog::{TermLogger, TerminalMode};
+use crate::config::Config;
+
 use std::fs;
 use std::io;
 use std::net::{TcpListener, TcpStream};
 use std::thread;
 
-use crate::config::Config;
+use log::{debug, error, info};
+use simplelog::{TermLogger, TerminalMode};
 
 const DEFAULT_PORT: u16 = 8888;
 
